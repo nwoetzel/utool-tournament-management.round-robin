@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scr"
+        android:layout_width="match_parent"
+        android:layout_height="380dp" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:text="Number of rounds you want the tournament to last. Default: #players-1." />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="7dp"
+                android:text="Default amount of points a player should be rewarded for a win, loss or tie in a match."
+                android:textColor="#FF99FF" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="7dp"
+                android:text="Kirkman: Standard pairing algorithm. Rotates players by one each round." />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="7dp"
+                android:text="Berger: Rotates players by (n/2)-1 each round." />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView41"
+                android:layout_below="@+id/textView41"
+                android:layout_marginTop="7dp"
+                android:text="All selected tie breakers will be used in descending order."
+                android:textColor="#FF99FF" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="7dp"
+                android:text="Head to Head: If the players have versed each other, the winner will win the tie."
+                android:textColor="#FF99FF" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView51"
+                android:layout_below="@+id/textView51"
+                android:layout_marginTop="7dp"
+                android:text="Run Differential: The player who scored higher cumulatively in the tied players matchups."
+                android:textColor="#FF99FF" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView52"
+                android:layout_below="@+id/textView52"
+                android:layout_marginTop="7dp"
+                android:text="Lazy: Winner is randomly selected."
+                android:textColor="#FF99FF" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Rounds"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00FFFF" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_alignTop="@+id/textView3"
+                android:gravity="center"
+                android:text="Scoring"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00FFFF" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_toLeftOf="@+id/textView4"
+                android:gravity="center"
+                android:text="Matching"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00FFFF" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/TextView02"
+                android:layout_alignTop="@+id/textView5"
+                android:gravity="center"
+                android:text="Ties"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00FFFF" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/help_close_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Close" />
+
+</LinearLayout>

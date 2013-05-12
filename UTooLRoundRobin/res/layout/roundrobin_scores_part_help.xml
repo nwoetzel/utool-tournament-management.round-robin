@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:text="Tap on these buttons to increase/decrease each players score" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Once a winner is determined, tap on the P1 Wins, P2 Wins or the Tie button."
+        android:textColor="#FF99FF" />
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:text="Only hosts and moderators of a tournament can save the scores of a match. A host can promote you by going to Menu->Options->Connected Player Permissions." />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:gravity="center"
+        android:text="Winner"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:text="+" />
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/button2"
+    android:text="-" />
+
+
+<Button
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignRight="@+id/button1"
+    android:layout_alignTop="@+id/textView4"
+    android:gravity="center"
+    android:enabled="false"
+    android:text="Save"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+<Button
+    android:id="@+id/help_close_button"
+    android:layout_width="100dp"
+    android:layout_height="40dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/textView4"
+    android:text="Close" />
+
+</RelativeLayout>

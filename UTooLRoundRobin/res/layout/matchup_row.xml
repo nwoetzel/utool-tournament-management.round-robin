@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:id="@+id/background_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/player_one_portrait"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black_row" />
+
+    <ImageView
+        android:id="@+id/player_one_portrait"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/mid"
+        android:background="@drawable/silhouette" />
+
+
+    <TextView
+        android:id="@+id/player_one_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_one_portrait"
+        android:layout_alignTop="@+id/player_one_portrait"
+        android:layout_toLeftOf="@+id/player_one_star"
+        android:layout_toRightOf="@+id/player_one_portrait"
+        android:paddingLeft="10dp"
+        android:text="Player 1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/player_one_score"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_one_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/player_one_name"
+        android:text="25.5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+
+    <ImageView
+        android:id="@+id/player_one_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_one_score"
+        android:layout_alignTop="@+id/player_one_name"
+        android:layout_toLeftOf="@+id/player_one_score"
+        android:src="@android:drawable/btn_star_big_on" />
+
+    <ImageView
+        android:id="@+id/player_two_portait"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/background_row"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@+id/mid"
+        android:background="@drawable/silhouette" />
+
+
+
+
+    <TextView
+        android:id="@+id/player_two_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_two_portait"
+        android:layout_alignLeft="@+id/player_one_name"
+        android:layout_alignRight="@+id/player_one_name"
+        android:layout_alignTop="@+id/player_two_portait"
+        android:text="Player 2"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+
+    <ImageView
+        android:id="@+id/player_two_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_two_name"
+        android:layout_alignLeft="@+id/player_one_star"
+        android:layout_alignTop="@+id/player_two_name"
+        android:src="@android:drawable/btn_star_big_on" />
+
+
+    <TextView
+        android:id="@+id/player_two_score"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/player_two_star"
+        android:layout_alignTop="@+id/player_two_name"
+        android:layout_toRightOf="@+id/player_two_star"
+        android:text="25.5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/mid"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/background_row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="32sp" />
+
+</RelativeLayout>

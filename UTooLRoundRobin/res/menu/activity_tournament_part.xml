@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/options_part" android:titleCondensed="Options" android:title="Options"></item>
+    <item android:id="@+id/quit_part" android:titleCondensed="Quit" android:title="Quit"></item>
+    <item android:id="@+id/help_part" android:titleCondensed="Help" android:title="Help"></item>
+    <item android:id="@+id/refresh_part" android:titleCondensed="Refresh" android:title="Refresh"></item>
+    
+
+</menu>

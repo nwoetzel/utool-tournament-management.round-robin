@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/tie_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/tie_option_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tie_check_box"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/options_tie_increase"
+        android:gravity="center_vertical"
+        android:text="Opponent Score"
+        android:textSize="24sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <ImageButton
+        android:id="@+id/options_tie_decrease"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/tie_check_box"
+        android:src="@android:drawable/arrow_down_float" />
+
+    <ImageButton
+        android:id="@+id/options_tie_increase"
+        android:layout_width="30dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/options_tie_decrease"
+        android:src="@android:drawable/arrow_up_float" />
+
+</RelativeLayout>

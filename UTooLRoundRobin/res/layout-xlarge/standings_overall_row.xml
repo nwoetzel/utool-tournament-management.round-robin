@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <TextView
+        android:id="@+id/rank_overall"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:background="#101010"
+        android:gravity="center"
+        android:text=" 1 "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rank_overall"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/rank_overall"
+        android:background="#0F1410"
+        android:gravity="center"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/name_overall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toLeftOf="@+id/wins_overall"
+        android:layout_toRightOf="@+id/prof_pic"
+        android:background="#0F1410"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:text="John C. Smithy"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/ties_overall"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/name_overall"
+        android:layout_toLeftOf="@+id/score_overall"
+        android:layout_alignTop="@+id/name_overall"
+        android:gravity="center"
+        android:text="212"
+        android:singleLine = "true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+
+    <TextView
+        android:id="@+id/losses_overall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/ties_overall"
+        android:layout_alignBottom="@+id/ties_overall"
+        android:layout_toLeftOf="@+id/ties_overall"
+        android:gravity="center"
+        android:text="412"
+        android:singleLine = "true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF" 
+         android:textSize="20sp"/>
+
+
+
+    <TextView
+        android:id="@+id/wins_overall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/losses_overall"
+        android:layout_alignBottom="@+id/losses_overall"
+        android:layout_toLeftOf="@+id/losses_overall"
+        android:gravity="center"
+        android:text="123"
+        android:singleLine = "true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+         android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/prof_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:src="@drawable/silhouette" />
+
+
+
+    <TextView
+        android:id="@+id/score_overall"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="132.7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>

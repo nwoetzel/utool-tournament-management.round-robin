@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="utool.plugin.roundrobin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.VIBRATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+
+    <application
+        android:icon="@drawable/robin"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black" >
+        <activity
+            android:name=".TournamentActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tournament" >
+            <intent-filter>
+                <action android:name="utool.plugin.intent.PICK_PLUGIN" />
+
+                <category android:name="utool.plugin.PLUGIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OverallStandingsActivity"
+            android:label="Overall Standings Activity" >
+        </activity>
+        <activity
+            android:name=".RoundRobinOptionsActivity"
+            android:label="RoundRobin Options Activity" >
+        </activity>
+        <activity android:name=".OptionsPlayerTab" />
+        <activity android:name=".OptionsTournamentTab" />
+        <activity android:name=".OptionsTournamentTabPart" />
+        <activity android:name=".OptionsEmailTab" />
+        <activity android:name=".RoundRobinOptionsTabActivity" />
+        <activity android:name=".ScoresActivity" />
+        <activity android:name="utool.plugin.roundrobin.ParticipantOptions" />
+    </application>
+
+</manifest>

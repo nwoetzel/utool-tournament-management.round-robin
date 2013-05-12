@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Round Robin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF0000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/utoolText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:text="Universal Tournament Organization Tool"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#595959" />
+
+    <ProgressBar
+        android:id="@+id/lineBreak"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="2sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/utoolText"
+        android:progress="100" />
+
+    <TextView
+        android:id="@+id/matchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineBreak"
+        android:layout_centerHorizontal="true"
+        android:text="Round 1 : Match 1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF00AAFF" />
+
+    <TextView
+        android:id="@+id/roundTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/matchName"
+        android:layout_centerHorizontal="true"
+        android:text="5:00"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Save" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/roundTimer" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/playerOneNameDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Player 1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/playerOnePortraitDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:scaleType="centerInside"
+                android:src="@drawable/silhouette"
+                android:contentDescription="player one portrait" />
+
+            <EditText
+                android:id="@+id/playerOneScore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:contentDescription="player one score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/playerOneAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="10dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/playerOneSubtract"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_marginRight="10dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/playerOneWinButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:text="P1 Win" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/versusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="VS"
+                android:textColor="#8B0000"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <Button
+                android:id="@+id/tieButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:text="Tie" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/playerTwoNameDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:text="Player 2"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/playerTwoPortraitDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:scaleType="centerInside"
+                android:src="@drawable/silhouette"
+                android:contentDescription="player two portrait" />
+
+            <EditText
+                android:id="@+id/playerTwoScore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="number"
+                android:contentDescription="player two score" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/playerTwoAddButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="10dp"
+                    android:text="+" />
+
+                <Button
+                    android:id="@+id/playerTwoSubtractButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:layout_marginRight="10dp"
+                    android:text="-" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/playerTwoWinButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".2"
+                android:text="P2 Win" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

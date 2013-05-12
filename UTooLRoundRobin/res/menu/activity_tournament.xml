@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_options"
+        android:title="Options"
+        android:orderInCategory="100"
+        android:showAsAction="never" android:titleCondensed="Options"/>
+    <item android:id="@+id/menu_terminate" android:titleCondensed="Terminate" android:title="Terminate"></item>
+    <item android:id="@+id/menu_help" android:titleCondensed="Help" android:title="Help"></item>
+    <item android:id="@+id/menu_edit" android:titleCondensed="Edit" android:title="Edit"></item>
+    <item android:id="@+id/menu_restart" android:titleCondensed="Restart" android:title="Restart"></item>
+    <item android:id="@+id/round_timer_item" android:titleCondensed="Timer" android:title="Round Timer"></item>
+</menu>

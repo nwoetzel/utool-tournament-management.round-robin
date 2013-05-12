@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+
+    <TextView
+        android:id="@+id/order_by_rank_overall"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lineBreak"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Rank  "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/order_by_s_overall"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overall_standings_list"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/order_by_t_overall"
+        android:gravity="center"
+        android:text="  S   "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/order_by_name_overall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overall_standings_list"
+        android:layout_alignTop="@+id/order_by_rank_overall"
+        android:layout_toLeftOf="@+id/order_by_w_overall"
+        android:layout_toRightOf="@+id/order_by_rank_overall"
+        android:gravity="center_vertical"
+        android:text=" Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/overall_standings_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/order_by_rank_overall" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/order_by_l_overall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overall_standings_list"
+        android:layout_alignTop="@+id/order_by_w_overall"
+        android:layout_toLeftOf="@+id/order_by_t_overall"
+        android:gravity="center"
+        android:text="L"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/order_by_w_overall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overall_standings_list"
+        android:layout_alignTop="@+id/order_by_name_overall"
+        android:layout_toLeftOf="@+id/order_by_l_overall"
+        android:gravity="center"
+        android:text="W"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/order_by_t_overall"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overall_standings_list"
+        android:layout_alignTop="@+id/order_by_l_overall"
+        android:layout_toLeftOf="@+id/order_by_s_overall"
+        android:gravity="center"
+        android:text="T"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+    
+      <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Round Robin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFF0000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/utoolText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:text="Universal Tournament Organization Tool"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#595959" />
+
+    <ProgressBar
+        android:id="@+id/lineBreak"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="2sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/utoolText"
+        android:progress="100" />
+    
+    
+</RelativeLayout>
