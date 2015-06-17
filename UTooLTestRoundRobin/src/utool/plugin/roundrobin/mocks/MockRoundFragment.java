@@ -2,9 +2,6 @@ package utool.plugin.roundrobin.mocks;
 
 import java.util.List;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.util.Log;
 import utool.plugin.activity.TournamentContainer;
 import utool.plugin.roundrobin.Match;
 import utool.plugin.roundrobin.MatchResult;
